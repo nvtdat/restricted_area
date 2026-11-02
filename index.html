@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, inidtial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Restricted Area</title>
+    <main class="main-content">
+        <h1 class="main-header">Write your Message</h1>
+        <div class="message-container" id="message-container">
+            <textarea id="message-input" class="message-input" placeholder="Start typing..."/ rows="7" cols="50" maxlength="250">
+            </textarea>
+            <div class="char-count-container">
+                <div class="char-count-row" id="char-count-row">
+                    <span id="char-count" class="char-count">0</span>
+                    <span>/</span>
+                    <span class="char-max-count" id="char-max-count">250</span>
+                </div>
+            </div>
+            <div class="message-warning" id="message-warning">
+                <img src="crisis.png" alt="Crisis Icon" class="warning-icon" />
+                <span class="warning-text">You have reached the maximum character limit.</span>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</html>
